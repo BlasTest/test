@@ -1,0 +1,11 @@
+{
+  "name": "blastest",
+  "version": "1.0.0",
+  "description": "test app of blascodes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BlasCodes",
+  "license": "ISC"
+}
