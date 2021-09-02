@@ -17,7 +17,11 @@ app.use(myconnection(mysql,{
 }))
 
 
-app.get('/',(req,res)=>{
+app.get('/', (req, res) => {
+    res.send('Hola desde Node + NGINX + MYSQL !')
+  })
+
+app.get('/insertar',(req,res)=>{
     req.getConnection((err,conn)=>{
         const number = Math.round(Math.random()*100)
         conn.query(`INSERT INTO productos values('${number}_producto')`,(err,result)=>{
